@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-type-scale)
 ## File Size
 
 1.0K type-scale.css
-737B type-scale.min.css
+737B type-scale.min.css 
+212B minified and gzipped
 
 ## The Code
 ```
