@@ -1,97 +1,113 @@
-# CSS TYPE SCALE
+# css-type-scale 0.0.6
 
-  Mobile-first classes for css-type-scale.
-  Set the desired css-type-scale on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
+Css module of single purpose classes for type scale
 
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
+#### Stats
 
-## Install
-Grab the css partial from github and include it in your project or alternatively
-you can install it via npm:
+247 | 28 | 27
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev css-type-scale
 ```
-View on [npm](https://www.npmjs.org/package/css-type-scale)
 
+#### With Git
 
-## File Size
-
-1.0K type-scale.css
-737B type-scale.min.css
-212B minified and gzipped
-
-## The Code
 ```
-.f1    { font-size: 2rem; }
-.f2    { font-size: 1.5rem; }
-.f3    { font-size: 1.2rem; }
-.f4    { font-size: 1.2rem; }
-.f5    { font-size: 1rem; }
-.f6,
-.small { font-size: .85rem; }
+git clone https://github.com/tachyons-css/css-type-scale
+```
 
+## Usage
 
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "css-type-scale";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/css-type-scale">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
+/*
+   TYPE SCALE
+*/
+.f1 { font-size: 2rem; }
+.f2 { font-size: 1.5rem; }
+.f3 { font-size: 1.2rem; }
+.f4 { font-size: 1.2rem; }
+.f5 { font-size: 1rem; }
+.f6, .small { font-size: .85rem; }
 @media screen and (min-width: 48em) {
  .mega-ns { font-size: 3rem; }
- .f1-ns {   font-size: 2rem; }
- .f2-ns {   font-size: 1.5rem; }
- .f3-ns {   font-size: 1.2rem; }
- .f4-ns {   font-size: 1.2rem; }
- .f5-ns {   font-size: 1rem; }
- .f6-ns {   font-size: .85rem; }
+ .f1-ns { font-size: 2rem; }
+ .f2-ns { font-size: 1.5rem; }
+ .f3-ns { font-size: 1.2rem; }
+ .f4-ns { font-size: 1.2rem; }
+ .f5-ns { font-size: 1rem; }
+ .f6-ns { font-size: .85rem; }
 }
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
+@media screen and (min-width:48em) and (max-width: 64em) {
  .mega-m { font-size: 3rem; }
- .f1-m {   font-size: 2rem; }
- .f2-m {   font-size: 1.5rem; }
- .f3-m {   font-size: 1.2rem; }
- .f4-m {   font-size: 1.2rem; }
- .f5-m {   font-size: 1rem; }
- .f6-m {   font-size: .85rem; }
+ .f1-m { font-size: 2rem; }
+ .f2-m { font-size: 1.5rem; }
+ .f3-m { font-size: 1.2rem; }
+ .f4-m { font-size: 1.2rem; }
+ .f5-m { font-size: 1rem; }
+ .f6-m { font-size: .85rem; }
 }
-
-@media screen and (min-width: 64em)  {
+@media screen and (min-width: 64em) {
  .mega-l { font-size: 4rem; }
- .f1-l   { font-size: 3rem; }
- .f2-l   { font-size: 2rem; }
- .f3-l   { font-size: 1.5rem; }
- .f4-l   { font-size: 1.2rem; }
- .f5-l   { font-size: 1rem; }
- .f6-l   { font-size: 1rem; }
+ .f1-l { font-size: 3rem; }
+ .f2-l { font-size: 2rem; }
+ .f3-l { font-size: 1.5rem; }
+ .f4-l { font-size: 1.2rem; }
+ .f5-l { font-size: 1rem; }
+ .f6-l { font-size: 1rem; }
 }
-
 ```
 
-## Author
+## Contributing
 
-[http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
-[http://mrmrs.io - Open source projects](http://mrmrs.io)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
