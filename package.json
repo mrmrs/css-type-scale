@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.4"
+    "tachyons-cli": "^1.0.8"
   },
   "scripts": {
     "start": "tachyons src/css-type-scale.css > css/css-type-scale.css && tachyons src/css-type-scale.css --minify > css/css-type-scale.min.css && tachyons src/css-type-scale.css --generate-docs --package=../../package.json > readme.md"
