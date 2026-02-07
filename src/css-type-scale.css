@@ -12,13 +12,13 @@
 
 
 @media screen and (min-width: 48em) {
- .mega-ns { font-size: 3rem; }
- .f1-ns {   font-size: 2rem; }
- .f2-ns {   font-size: 1.5rem; }
- .f3-ns {   font-size: 1.2rem; }
- .f4-ns {   font-size: 1.2rem; }
- .f5-ns {   font-size: 1rem; }
- .f6-ns {   font-size: .85rem; }
+ .mega-s { font-size: 3rem; }
+ .f1-s {   font-size: 2rem; }
+ .f2-s {   font-size: 1.5rem; }
+ .f3-s {   font-size: 1.2rem; }
+ .f4-s {   font-size: 1.2rem; }
+ .f5-s {   font-size: 1rem; }
+ .f6-s {   font-size: .85rem; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
