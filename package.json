@@ -1,38 +1,44 @@
 {
   "name": "css-type-scale",
-  "style": "type-scale.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-type-scale",
-  "description": "Css module of single purpose classes for type scale",
+  "version": "2.0.0",
+  "description": "Functional CSS for type-scale",
+  "style": "dist/type-scale.css",
+  "main": "dist/type-scale.css",
+  "exports": {
+    ".": "./dist/type-scale.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "type-scale"
+    "type-scale",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-type-scale": {
+  "homepage": "https://github.com/mrmrs/css-type-scale",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-type-scale.git"
+    "url": "https://github.com/mrmrs/css-type-scale.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-type-scale/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-type-scale/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
