@@ -1,112 +1,128 @@
-# css-type-scale 0.0.6
+# css-type-scale
 
-Css module of single purpose classes for type scale
+Functional CSS for type-scale
 
-#### Stats
+## Filesize
 
-247 | 28 | 27
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/type-scale.css` | 4056 bytes |
+| `dist/type-scale.min.css` | 3173 bytes (570 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-type-scale
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-type-scale
+```sh
+npm install css-type-scale
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-type-scale";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-type-scale">
+<link rel="stylesheet" href="https://unpkg.com/css-type-scale/dist/type-scale.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   TYPE SCALE
-*/
-.f1 { font-size: 2rem; }
-.f2 { font-size: 1.5rem; }
-.f3 { font-size: 1.2rem; }
-.f4 { font-size: 1.2rem; }
-.f5 { font-size: 1rem; }
-.f6, .small { font-size: .85rem; }
-@media screen and (min-width: 48em) {
- .mega-ns { font-size: 3rem; }
- .f1-ns { font-size: 2rem; }
- .f2-ns { font-size: 1.5rem; }
- .f3-ns { font-size: 1.2rem; }
- .f4-ns { font-size: 1.2rem; }
- .f5-ns { font-size: 1rem; }
- .f6-ns { font-size: .85rem; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .mega-m { font-size: 3rem; }
- .f1-m { font-size: 2rem; }
- .f2-m { font-size: 1.5rem; }
- .f3-m { font-size: 1.2rem; }
- .f4-m { font-size: 1.2rem; }
- .f5-m { font-size: 1rem; }
- .f6-m { font-size: .85rem; }
-}
-@media screen and (min-width: 64em) {
- .mega-l { font-size: 4rem; }
- .f1-l { font-size: 3rem; }
- .f2-l { font-size: 2rem; }
- .f3-l { font-size: 1.5rem; }
- .f4-l { font-size: 1.2rem; }
- .f5-l { font-size: 1rem; }
- .f6-l { font-size: 1rem; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-type-scale/dist/type-scale.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.f1` | `font-size: var(--font-size-1, .625rem);` |
+| `.f2` | `font-size: var(--font-size-2, .75rem);` |
+| `.f3` | `font-size: var(--font-size-3, .875rem);` |
+| `.f4` | `font-size: var(--font-size-4, 1rem);` |
+| `.f5` | `font-size: var(--font-size-5, 1.25rem);` |
+| `.f6` | `font-size: var(--font-size-6, 1.5rem);` |
+| `.f7` | `font-size: var(--font-size-7, 2rem);` |
+| `.f8` | `font-size: var(--font-size-8, 3rem);` |
+| `.f9` | `font-size: var(--font-size-9, 4rem);` |
+| `.f10` | `font-size: var(--font-size-10, 8rem);` |
+| `.f11` | `font-size: var(--font-size-11, 12rem);` |
+| `.f12` | `font-size: var(--font-size-12, 16rem);` |
+| `.ft1` | `font-size: var(--fluid-type-1, clamp(.625rem, 1cqi + .5rem, .875rem));` |
+| `.ft2` | `font-size: var(--fluid-type-2, clamp(.75rem, 1.5cqi + .5rem, 1rem));` |
+| `.ft3` | `font-size: var(--fluid-type-3, clamp(.875rem, 2cqi + .5rem, 1.25rem));` |
+| `.ft4` | `font-size: var(--fluid-type-4, clamp(1rem, 2.5cqi + .5rem, 1.5rem));` |
+| `.ft5` | `font-size: var(--fluid-type-5, clamp(1.25rem, 3cqi + .5rem, 2rem));` |
+| `.ft6` | `font-size: var(--fluid-type-6, clamp(1.5rem, 4cqi + .5rem, 3rem));` |
+| `.ft7` | `font-size: var(--fluid-type-7, clamp(2rem, 5cqi + .5rem, 4rem));` |
+| `.ft8` | `font-size: var(--fluid-type-8, clamp(2.5rem, 6cqi + .5rem, 5rem));` |
+| `.ft9` | `font-size: var(--fluid-type-9, clamp(3rem, 8cqi + .5rem, 7rem));` |
+| `.ft10` | `font-size: var(--fluid-type-10, clamp(4rem, 10cqi + .5rem, 9rem));` |
+| `.ft11` | `font-size: var(--fluid-type-11, clamp(5rem, 12cqi + .5rem, 12rem));` |
+| `.ft12` | `font-size: var(--fluid-type-12, clamp(6rem, 16cqi + .5rem, 16rem));` |
+| `.f1-s` | `font-size: var(--font-size-1, .625rem);` |
+| `.f2-s` | `font-size: var(--font-size-2, .75rem);` |
+| `.f3-s` | `font-size: var(--font-size-3, .875rem);` |
+| `.f4-s` | `font-size: var(--font-size-4, 1rem);` |
+| `.f5-s` | `font-size: var(--font-size-5, 1.25rem);` |
+| `.f6-s` | `font-size: var(--font-size-6, 1.5rem);` |
+| `.f7-s` | `font-size: var(--font-size-7, 2rem);` |
+| `.f8-s` | `font-size: var(--font-size-8, 3rem);` |
+| `.f9-s` | `font-size: var(--font-size-9, 4rem);` |
+| `.f10-s` | `font-size: var(--font-size-10, 8rem);` |
+| `.f11-s` | `font-size: var(--font-size-11, 16rem);` |
+| `.f12-s` | `font-size: var(--font-size-12, 32rem);` |
+| `.f1-m` | `font-size: var(--font-size-1, .625rem);` |
+| `.f2-m` | `font-size: var(--font-size-2, .75rem);` |
+| `.f3-m` | `font-size: var(--font-size-3, .875rem);` |
+| `.f4-m` | `font-size: var(--font-size-4, 1rem);` |
+| `.f5-m` | `font-size: var(--font-size-5, 1.25rem);` |
+| `.f6-m` | `font-size: var(--font-size-6, 1.5rem);` |
+| `.f7-m` | `font-size: var(--font-size-7, 2rem);` |
+| `.f8-m` | `font-size: var(--font-size-8, 3rem);` |
+| `.f9-m` | `font-size: var(--font-size-9, 4rem);` |
+| `.f10-m` | `font-size: var(--font-size-10, 8rem);` |
+| `.f11-m` | `font-size: var(--font-size-11, 12rem);` |
+| `.f12-m` | `font-size: var(--font-size-12, 32rem);` |
+| `.f1-l` | `font-size: var(--font-size-1, .625rem);` |
+| `.f2-l` | `font-size: var(--font-size-2, .75rem);` |
+| `.f3-l` | `font-size: var(--font-size-3, .875rem);` |
+| `.f4-l` | `font-size: var(--font-size-4, 1rem);` |
+| `.f5-l` | `font-size: var(--font-size-5, 1.25rem);` |
+| `.f6-l` | `font-size: var(--font-size-6, 1.5rem);` |
+| `.f7-l` | `font-size: var(--font-size-7, 2rem);` |
+| `.f8-l` | `font-size: var(--font-size-8, 3rem);` |
+| `.f9-l` | `font-size: var(--font-size-9, 4rem);` |
+| `.f10-l` | `font-size: var(--font-size-10, 8rem);` |
+| `.f11-l` | `font-size: var(--font-size-11, 16rem);` |
+| `.f12-l` | `font-size: var(--font-size-12, 32rem);` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.f1-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/type-scale.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/type-scale.css` — formatted
+- `dist/type-scale.min.css` — minified
 
 ## License
 
-ISC
+MIT
