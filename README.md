@@ -6,8 +6,8 @@ Functional CSS for type-scale
 
 | File | Size |
 |------|------|
-| `dist/type-scale.css` | 4056 bytes |
-| `dist/type-scale.min.css` | 3173 bytes (570 Gzipped) |
+| `dist/type-scale.css` | 963 bytes |
+| `dist/type-scale.min.css` | 629 bytes (200 Gzipped) |
 
 ## Install
 
@@ -39,66 +39,29 @@ npm install css-type-scale
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.f1` | `font-size: var(--font-size-1, .625rem);` |
-| `.f2` | `font-size: var(--font-size-2, .75rem);` |
-| `.f3` | `font-size: var(--font-size-3, .875rem);` |
-| `.f4` | `font-size: var(--font-size-4, 1rem);` |
-| `.f5` | `font-size: var(--font-size-5, 1.25rem);` |
-| `.f6` | `font-size: var(--font-size-6, 1.5rem);` |
-| `.f7` | `font-size: var(--font-size-7, 2rem);` |
-| `.f8` | `font-size: var(--font-size-8, 3rem);` |
-| `.f9` | `font-size: var(--font-size-9, 4rem);` |
-| `.f10` | `font-size: var(--font-size-10, 8rem);` |
-| `.f11` | `font-size: var(--font-size-11, 12rem);` |
-| `.f12` | `font-size: var(--font-size-12, 16rem);` |
-| `.ft1` | `font-size: var(--fluid-type-1, clamp(.625rem, 1cqi + .5rem, .875rem));` |
-| `.ft2` | `font-size: var(--fluid-type-2, clamp(.75rem, 1.5cqi + .5rem, 1rem));` |
-| `.ft3` | `font-size: var(--fluid-type-3, clamp(.875rem, 2cqi + .5rem, 1.25rem));` |
-| `.ft4` | `font-size: var(--fluid-type-4, clamp(1rem, 2.5cqi + .5rem, 1.5rem));` |
-| `.ft5` | `font-size: var(--fluid-type-5, clamp(1.25rem, 3cqi + .5rem, 2rem));` |
-| `.ft6` | `font-size: var(--fluid-type-6, clamp(1.5rem, 4cqi + .5rem, 3rem));` |
-| `.ft7` | `font-size: var(--fluid-type-7, clamp(2rem, 5cqi + .5rem, 4rem));` |
-| `.ft8` | `font-size: var(--fluid-type-8, clamp(2.5rem, 6cqi + .5rem, 5rem));` |
-| `.ft9` | `font-size: var(--fluid-type-9, clamp(3rem, 8cqi + .5rem, 7rem));` |
-| `.ft10` | `font-size: var(--fluid-type-10, clamp(4rem, 10cqi + .5rem, 9rem));` |
-| `.ft11` | `font-size: var(--fluid-type-11, clamp(5rem, 12cqi + .5rem, 12rem));` |
-| `.ft12` | `font-size: var(--fluid-type-12, clamp(6rem, 16cqi + .5rem, 16rem));` |
-| `.f1-s` | `font-size: var(--font-size-1, .625rem);` |
-| `.f2-s` | `font-size: var(--font-size-2, .75rem);` |
-| `.f3-s` | `font-size: var(--font-size-3, .875rem);` |
-| `.f4-s` | `font-size: var(--font-size-4, 1rem);` |
-| `.f5-s` | `font-size: var(--font-size-5, 1.25rem);` |
-| `.f6-s` | `font-size: var(--font-size-6, 1.5rem);` |
-| `.f7-s` | `font-size: var(--font-size-7, 2rem);` |
-| `.f8-s` | `font-size: var(--font-size-8, 3rem);` |
-| `.f9-s` | `font-size: var(--font-size-9, 4rem);` |
-| `.f10-s` | `font-size: var(--font-size-10, 8rem);` |
-| `.f11-s` | `font-size: var(--font-size-11, 16rem);` |
-| `.f12-s` | `font-size: var(--font-size-12, 32rem);` |
-| `.f1-m` | `font-size: var(--font-size-1, .625rem);` |
-| `.f2-m` | `font-size: var(--font-size-2, .75rem);` |
-| `.f3-m` | `font-size: var(--font-size-3, .875rem);` |
-| `.f4-m` | `font-size: var(--font-size-4, 1rem);` |
-| `.f5-m` | `font-size: var(--font-size-5, 1.25rem);` |
-| `.f6-m` | `font-size: var(--font-size-6, 1.5rem);` |
-| `.f7-m` | `font-size: var(--font-size-7, 2rem);` |
-| `.f8-m` | `font-size: var(--font-size-8, 3rem);` |
-| `.f9-m` | `font-size: var(--font-size-9, 4rem);` |
-| `.f10-m` | `font-size: var(--font-size-10, 8rem);` |
-| `.f11-m` | `font-size: var(--font-size-11, 12rem);` |
-| `.f12-m` | `font-size: var(--font-size-12, 32rem);` |
-| `.f1-l` | `font-size: var(--font-size-1, .625rem);` |
-| `.f2-l` | `font-size: var(--font-size-2, .75rem);` |
-| `.f3-l` | `font-size: var(--font-size-3, .875rem);` |
-| `.f4-l` | `font-size: var(--font-size-4, 1rem);` |
-| `.f5-l` | `font-size: var(--font-size-5, 1.25rem);` |
-| `.f6-l` | `font-size: var(--font-size-6, 1.5rem);` |
-| `.f7-l` | `font-size: var(--font-size-7, 2rem);` |
-| `.f8-l` | `font-size: var(--font-size-8, 3rem);` |
-| `.f9-l` | `font-size: var(--font-size-9, 4rem);` |
-| `.f10-l` | `font-size: var(--font-size-10, 8rem);` |
-| `.f11-l` | `font-size: var(--font-size-11, 16rem);` |
-| `.f12-l` | `font-size: var(--font-size-12, 32rem);` |
+| `.f1` | `font-size: 2rem;` |
+| `.f2` | `font-size: 1.5rem;` |
+| `.f4` | `font-size: 1.2rem;` |
+| `.f5` | `font-size: 1rem;` |
+| `.small` | `font-size: .85rem;` |
+| `.mega-s` | `font-size: 3rem;` |
+| `.f1-s` | `font-size: 2rem;` |
+| `.f2-s` | `font-size: 1.5rem;` |
+| `.f4-s` | `font-size: 1.2rem;` |
+| `.f5-s` | `font-size: 1rem;` |
+| `.f6-s` | `font-size: .85rem;` |
+| `.mega-m` | `font-size: 3rem;` |
+| `.f1-m` | `font-size: 2rem;` |
+| `.f2-m` | `font-size: 1.5rem;` |
+| `.f4-m` | `font-size: 1.2rem;` |
+| `.f5-m` | `font-size: 1rem;` |
+| `.f6-m` | `font-size: .85rem;` |
+| `.mega-l` | `font-size: 4rem;` |
+| `.f1-l` | `font-size: 3rem;` |
+| `.f2-l` | `font-size: 2rem;` |
+| `.f3-l` | `font-size: 1.5rem;` |
+| `.f4-l` | `font-size: 1.2rem;` |
+| `.f6-l` | `font-size: 1rem;` |
 
 ### Responsive
 
